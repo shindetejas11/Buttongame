@@ -1,0 +1,8 @@
+
+
+<form #value ="ngForm"  (ngSubmit)="submittbutton(value)" >
+<input type="radio" ngModel value="red" name="btncolor"> <span> Red  </span><br> 
+<input type="radio" ngModel value="blue" name="btncolor"> <span> Blue</span> <br>
+<input type="radio" ngModel value="green" name="btncolor">  <span>Green </span>
+<button [style.backgroundColor]="bgcolor"> Color</button>
+</form>

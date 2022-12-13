@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#!">Country-capital Game</a>
+</nav>
+
+<div class="container d-flex flex-wrap align-content-center justify-content-center">
+    <button *ngFor="let data of gameData" class="m-2 btn" value="{{data}}">{{data}}</button>
+</div>
+<div *ngIf="isGameFinished">
+    <h1>Congratulations</h1>
+</div>
